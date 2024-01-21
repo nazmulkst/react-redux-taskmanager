@@ -1,9 +1,7 @@
-import React from "react";
-
 const Completed = () => {
     return (
         <div>
-
+            <h1>CompletedPage</h1>
         </div>
     );
 };

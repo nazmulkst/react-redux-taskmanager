@@ -1,13 +1,17 @@
-import React from "react";
+import { Fragment, Suspense, lazy } from "react";
 import MasterLayout from "../components/masterLayout/Master-Layout";
+import LazyLoader from "../components/masterLayout/LazyLoader";
+const Create = lazy(() => import ("../components/Create/Create"));
 
 const CreatePage = () => {
     return (
-        <div>
+        <Fragment>
             <MasterLayout>
-                <h1>Create</h1>
+                <Suspense fallback={<LazyLoader/>}>
+                    <Create />
+                </Suspense>
             </MasterLayout>
-        </div>
+        </Fragment>
     )
 };
 

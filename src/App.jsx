@@ -11,6 +11,7 @@ import RegistrationPage from './pages/Registration-Page';
 import Page404 from './pages/Page-404';
 import ForgetPasswordPage from './pages/ForgetPassword-Page';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import FullscreenLoader from './components/masterLayout/Fullscreen-Loader';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path="*" element={<Page404/>} />
           </Routes>
         </BrowserRouter>
+        <FullscreenLoader/>
       </Fragment>
     </>
   )
