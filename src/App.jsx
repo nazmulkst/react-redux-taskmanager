@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react'
+import { Fragment } from 'react'
 import DashboardPage from './pages/Dashboard-Page';
 import CreatePage from './pages/Create-Page';
 import NewPage from './pages/New-Page';
@@ -23,7 +23,7 @@ function App() {
             <Route exact path="/All" element={<NewPage/>} />
             <Route exact path="/Progress" element={<ProgressPage/>} />
             <Route exact path="/Completed" element={<CompletedPage/>} />
-            <Route exact path="/Cancel" element={<CancelPage/>} />
+            <Route exact path="/Canceled" element={<CancelPage/>} />
             <Route exact path="/Profile" element={<ProfilePage/>} />
             <Route exact path="/Login" element={<LoginPage/>} />
             <Route exact path="/Registration" element={<RegistrationPage/>} />

@@ -1,9 +1,10 @@
-import React from "react";
+import SideMenu from "./SideMenu";
 
-const MasterLayout = () => {
+
+const MasterLayout = (props) => {
     return (
         <div>
-
+            <SideMenu {...props} />
         </div>
     )
 };
